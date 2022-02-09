@@ -56,7 +56,19 @@ public class Controller {
                 || multiplier.getText().isEmpty()
                 || mod.getText().isEmpty()) {                     //проверка на пустоту полей
             generatorAns.setText("Введите значение/значения в поля ввода");
-        } else {
+        } else if(seedValue < 0 || seedValue >= modValue){
+            generatorAns.setText("Начальное значение не удоблетворяет условию: 0<= Н.з. < модуль");
+        }
+        else if(multiplierValue < 0 || multiplierValue >= modValue){
+            generatorAns.setText("Значение множителя не удоблетворяет условию: 0<= множитель < модуль");
+        }
+        else if(modValue < 2 ){
+            generatorAns.setText("Множитель дожен быть >= 2");
+        }
+        else if(incValue < 0 || incValue >= modValue){
+            generatorAns.setText("Значение приращения не удоблетворяет условию: 0<= Приращение < модуль");
+        }
+        else {
             generatorAns.setText(Arrays.toString(gfg
                     .lcm(seedValue, modValue, multiplierValue, incValue, noOfRandomNumValue))
             .replace("[", "")
