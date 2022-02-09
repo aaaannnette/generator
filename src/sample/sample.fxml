@@ -45,7 +45,7 @@
                </font>
             </Text>
             <TextField fx:id="mod" layoutX="110.0" layoutY="72.0" prefHeight="27.0" prefWidth="44.0" />
-            <TextField fx:id="multiplier" layoutX="223.0" layoutY="110.0" prefHeight="27.0" prefWidth="44.0" />
+            <TextField fx:id="multiplier" layoutX="146.0" layoutY="110.0" prefHeight="27.0" prefWidth="44.0" />
             <TextField fx:id="inc" layoutX="146.0" layoutY="153.0" prefHeight="27.0" prefWidth="44.0" />
             <TextField fx:id="noOfRandomNum" layoutX="326.0" layoutY="199.0" prefHeight="27.0" prefWidth="44.0" />
          </children>
